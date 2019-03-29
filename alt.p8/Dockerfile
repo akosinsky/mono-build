@@ -3,8 +3,8 @@ FROM akosinsky/requirements-mono-build:alt.p8
 RUN wget https://download.mono-project.com/sources/mono/mono-4.6.2.7.tar.bz2 ; \
 tar xfj mono-4.6.2.7.tar.bz2 ; \
 cd /mono-4.6.2 ; \
-./configure ; \
 make get-monolite-latest ; \
+./configure ; \
 make ; \
 make install ; \
 apt -y install pkg-config cifs-utils mate-terminal; \
