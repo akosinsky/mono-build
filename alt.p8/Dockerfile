@@ -1,6 +1,6 @@
 FROM akosinsky/requirements-mono-build:alt.p8
 
-RUN apt-get -y install mono-devel ; \
+RUN apt-get -y install gcc5-c++ mono-devel ; \
 wget https://download.mono-project.com/sources/mono/mono-4.6.2.7.tar.bz2 ; \
 tar xfj mono-4.6.2.7.tar.bz2 ; \
 cd /mono-4.6.2 ; \
