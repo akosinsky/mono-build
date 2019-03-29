@@ -6,7 +6,6 @@ tar xfj mono-4.6.2.7.tar.bz2 ; \
 cd /mono-4.6.2 ; \
 ./configure ; \
 make ; \
-make install ; \
 apt -y install pkg-config cifs-utils mate-terminal; \
 wget https://github.com/mono/xsp/archive/4.6.tar.gz ; \
 tar xfz 4.6.tar.gz ; \
@@ -14,4 +13,7 @@ cd xsp-4.6 ; \
 ./autogen.sh ; \
 ./configure ; \
 make ; \
+cd /mono-4.6.2 ; \
+make install ; \
+cd xsp-4.6 ; \
 make install
